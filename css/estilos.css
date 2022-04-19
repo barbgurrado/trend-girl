@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0p;
+}
+
+html{
+    background-color: #FFF8F0;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0cm;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.espaciado {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.menu-head {
+    background-image: linear-gradient(to left, #E2AFDE, #F991CC);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.icon {
+    width: 20px;
+}
+
+.menu1 {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu1 li {
+    margin-right: 5px;
+}
+
+.menu1 li a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+footer{
+    background-image: linear-gradient(90deg, rgba(211,194,206,1) 0%, rgba(196,115,172,1) 35%, rgba(147,89,130,1) 100%);
+    font-size: medium; 
+    text-align:center; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+}
+
+.links {
+    color: #FFA5AA;
+}
+
+a.links:hover, a.links:active {
+    font-size: 110%;
+}
+
+.banner{
+    padding-top: 1cm;
+    padding-left: 4cm;
+    padding-bottom: 1cm;
+    background: #D3C2CE;
+    transition: background ease-in .3s;
+}
+
+.banner:hover {
+    background: #b66fa1;
+}
+
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    padding-top: 1cm; 
+    padding-bottom: 1cm; 
+    padding-left: 13%;
+}
+
+.menu-fotos {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+  
+.menu-fotos:hover {
+    opacity: 0.3;
+}
+
+
+h2 {
+    color: #b66fa1; 
+    text-align: left; 
+    font-size: xx-large;
+}
+
+h3 {
+    color: #b66fa1; 
+    font-size: x-large;
+} 
+
+p {
+    font-size: large;
+}
+
+section {
+    background-color: #fcd8cd;
+    padding: 6px;
+    border-radius: 2px;
+}
+
+article {
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #b66fa1;
+}
+
+.Gossip img { 
+    width: 800px;
+    height: auto;
+}
+
+
+.Blair {
+    display: flex;
+    padding: 0px; 
+    float: left;
+}
+    
+.slider {
+	width: 100%;
+	margin: 1px;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 5s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.Serena {
+    display: flex;
+    padding: 0px; 
+    height: auto; 
+}
+    
+
+.Oscars img {
+    width: 1000px;
+    height: auto;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .espaciado {
+        padding-left: 0.5px;
+        padding-right: 3px;
+    }
+    
+    .menu-head {
+        display: flex;
+        flex-direction: row;
+        justify-content:left;
+        align-items: left;
+        height: 26px;
+        width: auto;
+    }
+    
+    .icon {
+        width: 20px;
+        padding-left: 20px;
+    }
+    
+    
+    .menu1 li {
+        margin-right: 10px;
+    }
+    
+    .menu1 li a {
+        font-size: 12px;
+    }
+    
+    footer{
+        font-size: 12px; 
+        text-align: left; 
+        padding-top: 10px; 
+        padding-bottom: 10px; 
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    
+    .banner{
+        padding-top: 0.5cm;
+        padding-left: 0cm;
+        padding-bottom: 0.5cm;
+    }
+
+    .banner img {
+        width: 600px;
+    }
+    
+    .home {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 1px;
+        grid-row-gap: 1px;
+        padding-top: 0cm; 
+        padding-bottom: 0cm; 
+        padding-right: 30px;
+    }
+
+    .home img {
+        width: 400px;
+    }
+    
+    h2{
+        font-size: x-large;
+    }
+    
+    h3 {
+        font-size: large;
+    } 
+    
+    p {
+        font-size: small;
+    }
+    
+    section {
+        padding: 1px;
+    }
+    
+    article {
+        padding: 2px;
+        margin-bottom: 7.5px;
+    }
+    
+    .Gossip img { 
+        width: 550px;
+    }
+
+    .Blair {
+        display: flex;
+        padding: 0px; 
+        float: left;
+        word-wrap: break-word;
+    }
+
+    .Blair p { 
+        word-wrap: break-word;
+    }
+    
+    
+    .Serena {
+        display: flex;
+        padding: 0px; 
+        height: auto; 
+    }
+ 
+    
+    .Oscars img {
+        width: 550px;
+    }
+   
+
+    }
